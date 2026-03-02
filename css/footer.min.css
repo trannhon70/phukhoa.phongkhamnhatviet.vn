@@ -1,0 +1,133 @@
+.footer {
+    width: 100%;
+    background-color: #d9668a;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+}
+
+.footer_top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer_top_right_title {
+    font-weight: 700;
+    color: white;
+    font-size: 16px;
+}
+
+.footer_top_right_title1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-top: 2px;
+}
+
+.footer_list {
+    margin-top: 10px;
+}
+
+.footer_list_item {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+}
+/* /// */
+.footer__mobile-body {
+    position: fixed;
+    bottom: 0;
+    width: 600px;
+    z-index: 1000;
+}
+
+.footer__mobile-container {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 4px;
+    width: 100%;
+}
+
+.footer__mobile-container-left {
+    width: 70%;
+    position: relative;
+}
+
+.footer__mobile-container-left,
+.footer__mobile-container-right {
+    background-image: url(../images/banner/bg-mobile-top.png);
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #d9668a;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.footer__mobile-container-left-top {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.footer__mobile-container-left-bottom {
+    background-color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 3px 40px;
+    margin-top: 6px;
+    color: black;
+}
+.footer__mobile-container-right {
+    width: 30%;
+}
+
+.footer__mobile-container-right > div {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+.footer__mobile-container-right > img {
+    transform: translate(0px, -22px);
+}
+
+.footer__mobile-container-left-icon {
+    position: absolute;
+    top: 0;
+    right: -33px;
+}
+
+.footer__mobile-container-left-icon-top {
+    position: absolute;
+    top: -50px;
+    right: -42px;
+    background-image: url(../images/icons/icon_chat.png);
+    width: 80px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer__mobile-container-left-icon-top > span {
+    margin-top: 18px;
+    display: block;
+    font-size: 12px;
+    color: white;
+    font-weight: 700;
+}

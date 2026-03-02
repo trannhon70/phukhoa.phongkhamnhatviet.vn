@@ -1,0 +1,220 @@
+.category__right-title {
+    background-color: #d9668a;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.chinh-sua {
+    background-color: #e1b564;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 2px 10px;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+.chinh-sua:hover {
+    background-color: #d79f39;
+    transition: 1s;
+}
+
+.bai-viet-footer {
+    margin: 10px 0px;
+    padding: 5px;
+    border: 2px dashed #e43b69;
+    font-size: 16px;
+    font-weight: 500;
+}
+.bai-viet-footer a {
+    color: #0056b3; /* màu xanh đậm */
+    text-decoration: underline; /* có gạch chân */
+    font-weight: bold; /* chữ đậm dễ thấy */
+}
+.bai-viet-footer a:hover {
+    color: #ff6600;
+}
+
+.blurred {
+    filter: blur(5px);
+    transition: filter 0.5s;
+}
+.view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #666;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.view_button {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #999;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 10px;
+    border: none;
+}
+.hidden {
+    display: none;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.hiden_img {
+    position: relative;
+}
+
+.glow-on-hover {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin: 10px;
+}
+.glow-on-hover:before {
+    content: "";
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+.glow-on-hover:active {
+    color: #000;
+}
+.glow-on-hover:active:after {
+    background: #fff0;
+}
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+.glow-on-hover:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.custom-h2-style {
+    background-image: url(../images/banner/bg_h2.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: auto;
+    padding: 10px 7% 10px 60px;
+    border-top-left-radius: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: left;
+    margin: 7px 0px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.custom-h2-style::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 60px; /* Độ rộng của hình ảnh */
+    height: 40px; /* Chiều cao của hình ảnh */
+    background-image: url("../images/icons/icon_h2.webp");
+    background-repeat: no-repeat;
+    background-size: contain; /* Hoặc cover nếu cần */
+}
+
+.img-responsive {
+    width: 100% !important;
+    height: 225px !important;
+}
+
+.img-gif {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+}
+
+.body-placeholder {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    padding: 0px 10px;
+}
+
+.body-placeholder.loaded {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 999px) {
+    .img-responsive {
+        width: 100% !important;
+        height: 225px !important;
+    }
+    .img-gif {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 8px !important;
+    }
+
+    .view {
+        text-align: center !important;
+        width: 100% !important;
+        height: 226px !important;
+    }
+    .view_button {
+        top: 72% !important;
+    }
+
+    .custom-h2-style {
+        font-size: 18px !important;
+    }
+}

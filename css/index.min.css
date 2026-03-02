@@ -1,0 +1,20 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-size: 1rem;
+    width: 600px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 599px) {
+    body,
+    .header_mobile_container-body,
+    .footer__mobile-body {
+        width: 100% !important;
+    }
+}
