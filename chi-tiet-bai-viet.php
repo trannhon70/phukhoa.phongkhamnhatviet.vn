@@ -36,11 +36,11 @@ function setTitleAndScroll()
         echo "<meta name='keywords' content='$safeKeywords'>\n";
         echo "<meta property='og:title' content='$safeTitle'>\n";
         echo "<meta property='og:description' content='$safeDescription'>\n";
-        echo "<meta property='og:image' content='https://phukhoa.nhatvietclinic.vn/admin/uploads/$safeImage'>\n";
+        echo "<meta property='og:image' content='https://phukhoa.phongkhamnhatviet.vn/admin/uploads/$safeImage'>\n";
         echo "<meta property='og:image:width' content='1200'>\n";
         echo "<meta property='og:image:height' content='630'>\n";
         echo "<meta property='og:type' content='article'>\n";
-        echo "<meta property='og:url' content='https://phukhoa.nhatvietclinic.vn/{$getPostDetail['slug']}.html'>\n";
+        echo "<meta property='og:url' content='https://phukhoa.phongkhamnhatviet.vn/{$getPostDetail['slug']}.html'>\n";
     }
 }
 setTitleAndScroll();
@@ -211,7 +211,7 @@ setTitleAndScroll();
                         img.classList.add('img-responsive')
                     }
                     if (img.src.startsWith(
-                            'https://phukhoa.nhatvietclinic.vn/ckfinder/userfiles/images/Chat/Chat-Dakhoa.gif')) {
+                            'https://phukhoa.phongkhamnhatviet.vn/ckfinder/userfiles/images/Chat/Chat-Dakhoa.gif')) {
                         // if (img.src.startsWith('http://localhost/ckfinder/userfiles/images/Chat/Chat-Dakhoa.gif')) {
                         img.classList.add('img-gif');
 

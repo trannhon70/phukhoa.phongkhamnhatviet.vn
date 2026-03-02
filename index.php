@@ -1,4 +1,7 @@
 <?php include 'inc/header.php' ?>
+<meta name="description"
+    content="Phòng khám Nhật Việt chuyên điều trị bệnh nam khoa, bệnh xã hội, da liễu, hậu môn - trực tràng uy tính tại thành phố Hồ Chí Minh">
+<title>Phòng khám Nhật Việt</title>
 <link rel="stylesheet" href="<?php echo $local ?>/css/trang_chu.min.css">
 </head>
 

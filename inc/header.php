@@ -21,8 +21,8 @@ header("Pragma: no-cache");
 header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
 header("Cache-Control: max-age=2592000");
 
-// $local = 'http://localhost/_nhatvietnew/phukhoa.nhatvietclinic.vn';
-$local = 'https://phukhoa.nhatvietclinic.vn'
+// $local = 'http://localhost/_nhatvietnew/phukhoa.phongkhamnhatviet.vn';
+$local = 'https://phukhoa.phongkhamnhatviet.vn'
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,9 +30,7 @@ $local = 'https://phukhoa.nhatvietclinic.vn'
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Phòng khám Nhật Việt chuyên điều trị bệnh nam khoa, bệnh xã hội, da liễu, hậu môn - trực tràng uy tính tại thành phố Hồ Chí Minh">
-    <title>Phòng khám Nhật Việt</title>
+
     <link rel="icon" href="<?php echo $local ?>/images/icons/icon_logo.png" type="image/x-icon">
     <link rel="preload" as="image" href="<?php echo $local ?>/images/banner/mobile_banner.webp" fetchpriority="high"
         media="(max-width: 768px)">
