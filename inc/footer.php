@@ -41,7 +41,7 @@
                      <span>GỌI NGAY</span>
                  </div>
              </a>
-             <a href="<?php echo $local ?>" class="footer__mobile-container-right">
+             <a href="https://tuvan.mayo.com.vn/LR/Chatpre.aspx?id=KUK38256576&lng=en" class="footer__mobile-container-right">
                  <div>ĐẶT LỊCH</div>
                  <img loading="lazy" width="70px" height="auto" src="<?php echo $local ?>/images/icons/icon_lich.png"
                      alt="...">
@@ -50,7 +50,7 @@
      </div>
  </div>
 
- <script defer src="https://livechat.phongkhamnhatviet.vn/chat-box-ai.js"></script>
+ <script language="javascript" src="https://tuvan.mayo.com.vn/JS/LsJS.aspx?siteid=KUK38256576&float=1&lng=en"></script>
  <script defer>
      let element = document.querySelector('.footer__mobile-container-left-icon-top');
 
@@ -102,10 +102,11 @@
                      document.body.appendChild(script);
                  });
              } else {
-                 const desktopScripts = [{
-                         src: '<?php echo $local ?>/js/slider.min.js',
-                         id: 'desktop-0'
-                     },
+                 const desktopScripts = [
+                     // {
+                     //      src: '<?php echo $local ?>/js/slider.min.js',
+                     //      id: 'desktop-0'
+                     //  },
 
                  ];
                  desktopScripts.forEach(({

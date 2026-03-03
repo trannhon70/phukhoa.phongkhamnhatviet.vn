@@ -13,7 +13,7 @@
             <?php include "layout/sider_bar.php" ?>
         </div>
     </div>
-    <div class="header__mobile-baner">
+    <a href="https://tuvan.mayo.com.vn/LR/Chatpre.aspx?id=KUK38256576&lng=en" class="header__mobile-baner">
         <img fetchpriority=high src="<?php echo $local ?>/images/banner/banner_mobile.webp" alt="..." srcset="">
-    </div>
+    </a>
 </header>
