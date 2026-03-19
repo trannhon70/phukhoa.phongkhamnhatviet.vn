@@ -84,7 +84,7 @@ setTitleAndScroll();
                             một số nội dung có thể không thuộc nghiệp vụ của phòng khám chúng tôi, Hiệu quả của việc hỗ trợ
                             điều trị phụ thuộc vào cơ địa của mỗi người. Cần biết thông tin liên hệ để được tư vấn trực
                             tuyến miễn phí.<a aria-label="tư vấn"
-                                href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">[TƯ VẤN
+                                href="https://tuvan.mayo.com.vn/LR/Chatpre.aspx?id=KUK38256576&lng=en">[TƯ VẤN
                                 TRỰC TUYẾN]</a>
                         </div>
                     <?php } else { ?>

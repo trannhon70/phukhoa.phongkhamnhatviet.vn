@@ -15,7 +15,7 @@
          <a href="<?php echo $local ?>">lịch khám bệnh</a>
      </li>
      <li>
-         <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">tư vấn trực tuyến</a>
+         <a href="https://tuvan.mayo.com.vn/LR/Chatpre.aspx?id=KUK38256576&lng=en">tư vấn trực tuyến</a>
      </li>
      <li>
          <a href="tel:02877779888">đặt lịch</a>
