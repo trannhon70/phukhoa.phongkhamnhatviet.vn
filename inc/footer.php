@@ -41,7 +41,7 @@
                      <span>GỌI NGAY</span>
                  </div>
              </a>
-             <a href="https://tuvan.mayo.com.vn/LR/Chatpre.aspx?id=KUK38256576&lng=en" class="footer__mobile-container-right">
+             <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;" class="footer__mobile-container-right">
                  <div>ĐẶT LỊCH</div>
                  <img loading="lazy" width="70px" height="auto" src="<?php echo $local ?>/images/icons/icon_lich.png"
                      alt="...">

@@ -13,7 +13,11 @@
             <?php include "layout/sider_bar.php" ?>
         </div>
     </div>
-    <a href="https://tuvan.mayo.com.vn/LR/Chatpre.aspx?id=KUK38256576&lng=en" class="header__mobile-baner">
+    <div style="position: relative;" class="header__mobile-baner">
         <img fetchpriority=high src="<?php echo $local ?>/images/banner/banner_mobile.webp" alt="..." srcset="">
-    </a>
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 15vh; display: flex;">
+            <a style="display: block ; width: 50%; height: 15vh;" href="tel:+0901869945"></a>
+            <a style="display: block ; width: 50%; height: 15vh;" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"></a>
+        </div>
+    </div>
 </header>

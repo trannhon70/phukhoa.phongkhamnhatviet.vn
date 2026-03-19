@@ -84,7 +84,7 @@ setTitleAndScroll();
                             một số nội dung có thể không thuộc nghiệp vụ của phòng khám chúng tôi, Hiệu quả của việc hỗ trợ
                             điều trị phụ thuộc vào cơ địa của mỗi người. Cần biết thông tin liên hệ để được tư vấn trực
                             tuyến miễn phí.<a aria-label="tư vấn"
-                                href="https://tuvan.mayo.com.vn/LR/Chatpre.aspx?id=KUK38256576&lng=en">[TƯ VẤN
+                                href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">[TƯ VẤN
                                 TRỰC TUYẾN]</a>
                         </div>
                     <?php } else { ?>
@@ -156,7 +156,10 @@ setTitleAndScroll();
                             imgElements[i].style.setProperty('display', 'block', 'important');
                             let divWrapper = document.createElement('a');
                             divWrapper.className = 'glow-on-hover';
-                            divWrapper.href = "https://tuvan.mayo.com.vn/LR/Chatpre.aspx?id=KUK38256576&lng=en";
+                            divWrapper.href = "javascript:void(0)";
+                            divWrapper.addEventListener("click", function() {
+                                openZoosUrl('chatwin');
+                            });
                             divWrapper.setAttribute("aria-label", "Chat da khoa");
                             imgElements[i].parentNode.insertBefore(divWrapper, imgElements[i]);
                             divWrapper.appendChild(imgElements[i])
