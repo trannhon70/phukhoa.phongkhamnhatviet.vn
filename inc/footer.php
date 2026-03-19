@@ -30,9 +30,9 @@
  <div class="footer_fixed">
      <div class="footer__mobile-body">
          <div class="footer__mobile-container">
-             <a href="tel:+02877767777" class="footer__mobile-container-left">
+             <a href="tel:+0901869945" class="footer__mobile-container-left">
                  <div class="footer__mobile-container-left-top">TƯ VẤN TRỰC TUYẾN 24/7</div>
-                 <span class="footer__mobile-container-left-bottom">028-7776-7777</span>
+                 <span class="footer__mobile-container-left-bottom">0901-869-945</span>
                  <div class="footer__mobile-container-left-icon">
                      <img loading="lazy" width="65px" height="auto"
                          src="<?php echo $local ?>/images/icons/icon_phone_red.png" alt="...">

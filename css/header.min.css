@@ -25,6 +25,7 @@
 
 .header__mobile-baner {
     margin-top: 61px;
+    display: block;
 }
 
 .header__mobile-baner > img {
