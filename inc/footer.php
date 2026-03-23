@@ -30,7 +30,7 @@
  <div class="footer_fixed">
      <div class="footer__mobile-body">
          <div class="footer__mobile-container">
-             <a href="tel:+0901869945" class="footer__mobile-container-left">
+             <a href="tel:0901869945" class="footer__mobile-container-left">
                  <div class="footer__mobile-container-left-top">TƯ VẤN TRỰC TUYẾN 24/7</div>
                  <span class="footer__mobile-container-left-bottom">0901-869-945</span>
                  <div class="footer__mobile-container-left-icon">
