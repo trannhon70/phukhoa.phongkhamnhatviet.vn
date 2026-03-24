@@ -16,7 +16,7 @@
          <div class="footer_list_item">
              <img loading="lazy" style="width: 20px; height: auto;" src="<?php echo $local ?>/images/icons/icon-10.webp"
                  alt="...">
-             <span>Hotline: <strong>0968 063 109</strong> </span>
+             <span>Hotline: <strong>0901 869 945</strong> </span>
          </div>
          <!-- <div class="footer_list_item">
              <img loading="lazy" style="width: 20px; height: auto;" src="<?php echo $local ?>/images/icons/icon-11.webp"
