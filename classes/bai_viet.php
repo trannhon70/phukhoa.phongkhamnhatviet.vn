@@ -120,7 +120,8 @@ class post
     }
   }
 
-  public function getPagingBaiVietTheoBenh($id, $limit, $offset) {
+  public function getPagingBaiVietTheoBenh($id, $limit, $offset)
+  {
     $id = mysqli_real_escape_string($this->db->link, $id);
     $query = "SELECT * FROM admin_benh WHERE slug = '$id' LIMIT 1 ";
     $result = $this->db->select($query);
@@ -132,19 +133,19 @@ class post
         $result_baiviet = $this->db->select($query_baiviet);
         $dataBaiViet = [];
         if ($result_baiviet) {
-            while ($row = $result_baiviet->fetch_assoc()) {
-                $dataBaiViet[] = $row;
-            }
+          while ($row = $result_baiviet->fetch_assoc()) {
+            $dataBaiViet[] = $row;
+          }
         }
 
         $rowBenh['danhSachBaiViet'] = $dataBaiViet;
-                $data[] = $rowBenh;
+        $data[] = $rowBenh;
       }
-    } 
+    }
     return $data;
   }
 
-  public function getTotalCount($tieuDe,$IdBenh)
+  public function getTotalCount($tieuDe, $IdBenh)
   {
     $tieuDe = mysqli_real_escape_string($this->db->link, $tieuDe);
     if ($tieuDe !== '' || $IdBenh !== '') {
@@ -239,16 +240,53 @@ class post
     }
   }
 
-  public function getBaiViet_bySlug($id)
+  public function getBaiViet_bySlug($slug)
   {
-    $id = mysqli_real_escape_string($this->db->link, $id);
-    $query = "SELECT * FROM admin_baiviet WHERE slug = '$id' LIMIT 1";
+    $slug = mysqli_real_escape_string($this->db->link, $slug);
+
+    // lấy bài viết theo slug
+    $query = "SELECT baiviet.id, baiviet.title, baiviet.slug, baiviet.tieu_de, baiviet.id_benh,baiviet.id_khoa, baiviet.content,baiviet.img,baiviet.descriptions,baiviet.keyword,
+    benh.name AS name_benh, 
+    benh.id_khoa AS id_khoa, 
+    khoa.name AS name_khoa 
+    FROM admin_baiviet baiviet 
+    JOIN admin_benh benh ON baiviet.id_benh = benh.id 
+    JOIN admin_khoa khoa ON khoa.id = benh.id_khoa 
+    WHERE baiviet.slug = '$slug' 
+    LIMIT 1";
     $result = $this->db->select($query);
-    if ($result) {
-      return $result->fetch_assoc();
-    } else {
+
+    if (!$result) {
       return null;
     }
+
+    $post = $result->fetch_assoc();
+    $id_khoa = $post['id_khoa'];
+
+    // lấy 5 bài viết mới nhất cùng id_khoa
+    $queryRelated = "
+        SELECT slug, title 
+        FROM admin_baiviet 
+        WHERE id_khoa = '$id_khoa' 
+        AND slug != '$slug'
+        ORDER BY id DESC 
+        LIMIT 5
+    ";
+
+    $related = $this->db->select($queryRelated);
+
+    $relatedPosts = [];
+    if ($related) {
+      while ($row = $related->fetch_assoc()) {
+        $relatedPosts[] = $row;
+      }
+    }
+
+    // trả về cả bài viết chính + bài liên quan
+    return [
+      "post" => $post,
+      "related" => $relatedPosts
+    ];
   }
 
   public function getDanhSachBaiVietNew()
