@@ -49,8 +49,32 @@
          </div>
      </div>
  </div>
+ <div class="footer_list_icon">
+     <div>
+         <a class="footer_icon_happy" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
+             <img loading="lazy" src="<?php echo $local ?>/images/icons/icon_happy.gif" height="50px" width="50px"
+                 alt="..."></img>
+         </a>
+     </div>
+     <div style="margin-top:10px">
+         <a class="footer_icon_zalo" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
+             <img loading="lazy" src="<?php echo $local ?>/images/icons/icon_zalo.png" height="50px" width="50px"
+                 alt="..."></img>
+             <div class="ping_zalo"></div>
+         </a>
+     </div>
+     <div style="margin-top:10px">
+         <a class="footer_icon_mess" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
+             <img loading="lazy" style="margin-left:3px" src="<?php echo $local ?>/images/icons/icon_message.webp"
+                 height="45px" width="45px" alt="..."></img>
+             <div class="ping"></div>
+             <div class="footer_list_icon_number">10</div>
+         </a>
+     </div>
+ </div>
 
  <script language="javascript" src="https://tuvan.mayo.com.vn/JS/LsJS.aspx?siteid=KUK38256576&float=1&lng=en"></script>
+ <script defer src="<?php echo $local ?>/js/random_number.min.js"></script>
  <script defer>
      let element = document.querySelector('.footer__mobile-container-left-icon-top');
 
