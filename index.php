@@ -195,9 +195,7 @@
                         (2 ngày trước)
                     </div>
                     <div class="section_7_list_item_note">
-                        Mình bị viêm da cũng khá nặng, đã chữa trị nhiều nơi nhưng không khỏi. Mình biết đến Phòng khám
-                        Nhật Việt qua một người bạn. Khi mình đến khám, bác sĩ và nhân viên phòng khám hướng dẫn mình
-                        rất chi tiết trong từng hạng mục
+                        Mình bị viêm phụ khoa lâu năm chữa nhiều nơi không khỏi, may mắn mình sang đây thăm khám thấy hiệu quả rõ rệt, phòng khám mới trang thiết bị hiện đại, đội ngũ bác sĩ cũng tận tình chuyên nghiệp, xứng đáng là địa chỉ khám phụ đáng tin cho chị em.
                     </div>
                 </div>
             </div>
