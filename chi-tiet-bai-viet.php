@@ -128,6 +128,63 @@ setTitleAndScroll();
                     <?php } ?>
 
                 </div>
+                <div class="carousel" id="carousel">
+                    <div class="carousel-track">
+
+                        <!-- Slide 1 (LCP) -->
+                        <div class="slide">
+                            <div style="width:100%;max-width:100%;">
+                                <img
+                                    src="<?php echo $local ?>/images/banner/bs1.webp"
+                                    fetchpriority="high"
+                                    decoding="async"
+                                    width="1920"
+                                    height="600"
+                                    style="width:100%;object-fit:cover;"
+                                    alt="banner phòng khám">
+                                <div>
+                                    <h5 style="color: #fa7014; font-size: 16px; margin-top: 5px;  "><strong>BS.</strong> Lê Nguyễn Minh Ngọc</h5>
+                                    <div style="margin-top: 5px;"><strong>Chuyên khoa:</strong> Sản Phụ Khoa</div>
+                                    <div style="margin-top: 5px;"><strong>Kinh nghiệm:</strong> công tác tại các bệnh viện: Từ Dũ, Hùng Vương, Phụ sản Cần Thơ.</div>
+                                    <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;" style="display: flex; align-items: center; gap: 10px; width: 100%; margin-top: 5px; text-decoration: none; color: black; ">
+                                        <img loading="lazy" style="width: 30px; height:auto;" src="<?php echo $local ?>/images/icons/icon_card.webp" alt="...">
+                                        <span style="border-bottom: 1px solid black;">ĐẶT LỊCH HẸN KHÁM</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="slide">
+                            <div style="width:100%;max-width:100%;">
+                                <img
+                                    src="<?php echo $local ?>/images/banner/bs2.webp"
+                                    fetchpriority="high"
+                                    decoding="async"
+                                    width="1020"
+                                    height="400"
+                                    style="width:100%;object-fit:cover;"
+                                    alt="banner phòng khám">
+                                <div>
+                                    <h5 style="color: #fa7014; font-size: 16px; margin-top: 5px;  "><strong>BS.</strong> Huy</h5>
+                                    <div style="margin-top: 5px;"><strong>Chuyên khoa:</strong> Sản Phụ Khoa</div>
+                                    <div style="margin-top: 5px;"><strong>Kinh nghiệm:</strong> công tác tại các bệnh viện: Từ Dũ, Hùng Vương, Phụ sản Cần Thơ.</div>
+                                    <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;" style="display: flex; align-items: center; gap: 10px; width: 100%; margin-top: 5px; text-decoration: none; color: black; ">
+                                        <img loading="lazy" style="width: 30px; height:auto;" src="<?php echo $local ?>/images/icons/icon_card.webp" alt="...">
+                                        <span style="border-bottom: 1px solid black;">ĐẶT LỊCH HẸN KHÁM</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button style=" display:none;" class="nav prev">❮</button>
+                    <button style="display:none;" class="nav next">❯</button>
+                    <div class="dots"></div>
+                </div>
             </article>
         </main>
 
