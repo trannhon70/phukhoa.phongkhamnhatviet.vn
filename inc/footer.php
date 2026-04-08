@@ -75,7 +75,7 @@
 
  <script language="javascript" src="https://tuvan.mayo.com.vn/JS/LsJS.aspx?siteid=KUK38256576&float=1&lng=en"></script>
  <script defer src="<?php echo $local ?>/js/random_number.min.js"></script>
- <script defer src="<?php echo $local ?>/js/carousel.min.js"></script>
+
  <script defer>
      let element = document.querySelector('.footer__mobile-container-left-icon-top');
 

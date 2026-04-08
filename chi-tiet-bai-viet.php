@@ -187,7 +187,7 @@ setTitleAndScroll();
                 </div>
             </article>
         </main>
-
+        <script defer src="<?php echo $local ?>/js/carousel.min.js"></script>
         <script defer>
             function applyCSSandJS() {
 
