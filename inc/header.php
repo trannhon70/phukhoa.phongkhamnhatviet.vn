@@ -21,8 +21,8 @@ header("Pragma: no-cache");
 header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
 header("Cache-Control: max-age=2592000");
 
-$local = 'http://localhost/_nhatvietnew/phukhoa.phongkhamnhatviet.vn';
-// $local = 'https://phukhoa.phongkhamnhatviet.vn'
+// $local = 'http://localhost/_nhatvietnew/phukhoa.phongkhamnhatviet.vn';
+$local = 'https://phukhoa.phongkhamnhatviet.vn'
 ?>
 <!DOCTYPE html>
 <html lang="en">
