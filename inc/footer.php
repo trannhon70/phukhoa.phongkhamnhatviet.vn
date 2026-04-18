@@ -73,7 +73,6 @@
      </div>
  </div>
 
- <?php include_once "layout/live_chat.php" ?>
  <script language="javascript" src="https://tuvan.mayo.com.vn/JS/LsJS.aspx?siteid=KUK38256576&float=1&lng=en"></script>
  <script defer src="<?php echo $local ?>/js/random_number.min.js"></script>
 
